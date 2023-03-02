@@ -1,9 +1,9 @@
-class Persona2{
+class Persona2 extends Object{
 	String nombre;
 	String apellido;
 	String curp;
 	
-	Persona2(){	}
+	Persona2(){}
 	
 	Persona2(String nombrePersona, String apellido, String curp) {
 		this.nombre = nombrePersona;
@@ -22,6 +22,9 @@ class Persona2{
 	void dormir() {
 		System.out.println("La persona duerme");
 	}
+	
+
+	
 }
 
 
@@ -58,6 +61,7 @@ class Alumno extends Persona2{
 	
 	//Estoy en la clase Alumno
 	
+
 	
 	@Override
 	public String toString() {
@@ -73,7 +77,12 @@ class Alumno extends Persona2{
 				estres,
 				matricula,
 				suenio
-				);
+				);		
+	}
+
+	@Override
+	void dormir() {
+		System.out.println("El alumno no duerme");
 	}
 
 	
@@ -122,6 +131,12 @@ public class Main {
 		System.out.println("Profesor es persona?: " + profesorEsPersona);
 		
 		System.out.println(alumno);
+		
+		alumno.dormir();
+		alumno.comer();//El alumno come chatarra
+		profesor.comer(); //Come cosas fit
+		
+		
 		
 	}
 }
