@@ -1,3 +1,6 @@
+import acceso.Animal;
+import acceso.Reptil;
+
 class Persona2 extends Object{
 	String nombre;
 	String apellido;
@@ -137,6 +140,17 @@ public class Main {
 		profesor.comer(); //Come cosas fit
 		
 		
+		//Polimorfismo
+		Reptil reptil = new Reptil();
+		
+		String tipo = reptil.getTipoPiel();
+		System.out.println(tipo);
+		
+		Animal jenny = new Animal("Mamifero", 0, "Jenny");
+		Animal braian = new Animal("Insecto", 0, "el Braian");
+		jenny.reproducirse(braian);
+		
+
 		
 	}
 }
