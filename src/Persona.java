@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-class Persona {
+public class Persona {
 	//Atributos 
 	String nombre;
 	String apellidos;
@@ -11,7 +11,7 @@ class Persona {
 	Double peso;
 	Double altura;
 	Double imc;
-	
+		
 	//Métodos
 	void caminar() {
 		System.out.println(
@@ -40,6 +40,7 @@ class Persona {
 			persona.nombre
 		);
 	}
+	
 	
 }
 
